@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="orderContainer">
+        <h2>შეუკვეთე პროდუქტი დღესვე</h2>
+
+        <form method="post" action="success.html">
+          <input type="text" name="#" id="name" placeholder="სახელი" required />
+          <input type="text" name="#" id="surname" placeholder="გვარი" />
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="123 454 678"
+            pattern="[0-9]{3} [0-9]{3} [0-9]{3}"
+            required
+          />
+
+          <p>გთხოვთ მიუთითოთ ზუსტი მისამართი</p>
+          <textarea
+            name="message"
+            id="location"
+            cols="30"
+            rows="10"
+            required
+            placeholder="მისამართი: ქუჩა, სახლი, სართული,"
+          ></textarea>
+
+          <p class="ptwo">აირჩიეთ გადახდის მეთოდი</p>
+
+          <div class="checkboxCotainer">
+            <label class="checkbox" for="muCheckboxId">
+              <input
+                class="checkbox__input"
+                type="radio"
+                name="myCheckboxName"
+                id="muCheckboxId"
+                required
+              />
+              <div class="checkbox__box"></div>
+
+              ბარათით გადახდა
+            </label>
+
+            <label class="checkbox" for="muCheckboxIdtwo">
+              <input
+                class="checkbox__input"
+                type="radio"
+                name="myCheckboxName"
+                id="muCheckboxIdtwo"
+                required
+              />
+              <div class="checkbox__box"></div>
+
+              ქეშით გადახდა
+            </label>
+          </div>
+
+          <input
+            type="submit"
+            name="sumbit"
+            id="sumbit"
+            value="შეკვეთის გაფორმება"
+          />
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
